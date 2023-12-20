@@ -1,7 +1,7 @@
-const TituloSecundario = (props) => {
+const TituloSecundario = ({comision, anioActualProps}) => {
   return (
     <article>
-      <h2>Practica con react {props.anioActualProps}</h2>
+      <h2>Practica con react {anioActualProps}</h2>
       <p>
         React.js, comúnmente llamado simplemente React, es una biblioteca de
         JavaScript que se utiliza para construir interfaces de usuario. Toda
@@ -11,7 +11,7 @@ const TituloSecundario = (props) => {
         otro para el contenido principal, etc. Entenderás mejor esto cuando
         lleguemos a la sección en la que tenemos que trabajar con componentes.
         <br />
-        Comision: {props.comision}
+        Comision: {comision}
       </p>
     </article>
   );
